@@ -7,3 +7,6 @@ TEST(PayrollTests, Test_OT_Hours_when_amount_greater_than_40){
 TEST(PayrollTests, Test_OT_Hours_when_amount_less_than_40){
     EXPECT_EQ(0, getOTHours(30));
 }
+TEST(PayrollTests, Test_OT_Pay_when_hours_less_than_40){
+    EXPECT_EQ(0, getOTPayy(0, 10));
+}
