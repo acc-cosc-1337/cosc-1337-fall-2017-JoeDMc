@@ -16,3 +16,6 @@ TEST(PayrollTests, Test_OT_Pay_when_hours_greater_than_40){
 TEST(PayrollTests, Test_total_pay_without_overtime_hours){
     EXPECT_EQ(100, getGrossHourlyOTPay(10, 10, 0, 0));
 }
+TEST(PayrollTests, Test_total_pay_with_overtime_hours){
+    EXPECT_EQ(550, getGrossHourlyOTPay(50, 10, 150, 10));
+}
