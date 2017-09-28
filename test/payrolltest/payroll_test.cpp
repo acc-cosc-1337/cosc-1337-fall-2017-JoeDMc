@@ -22,3 +22,6 @@ TEST(PayrollTests, Test_total_pay_with_overtime_hours){
 TEST(PayrollTests, Test_salary_pay_math){
     EXPECT_EQ(2, getGrossSalaryPay(52));
 }
+TEST(PayrollTests, Test_FIT_tax_math){
+    EXPECT_EQ(15, getFIT(100));
+}
